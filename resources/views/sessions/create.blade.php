@@ -23,8 +23,6 @@
             <input type="password" name="password" class="form-control" value="{{ old('password') }}">
           </div>
 
-<<<<<<< HEAD
-=======
           <div class="form-group">
             <div class="form-check">
               <input type="checkbox" class="form-check-input" name="remember" id="exampleCheck1">
@@ -32,7 +30,6 @@
             </div>
           </div>
 
->>>>>>> login-logout
           <button type="submit" class="btn btn-primary">登录</button>
       </form>
 

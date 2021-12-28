@@ -7,12 +7,10 @@ body {
     font-weight: normal;
 }
 
-nav.navbar.navbar-expand-lg {
+.nav.navbar.navbar-expand-lg {
     margin-bottom: 20px;
 }
-.
-.
-.
+
 /* footer */
 
 footer {
@@ -38,17 +36,11 @@ footer {
 }
 
 
-.
-.
-.
-
-/* User gravatar */
-
 section.user_info {
   padding-bottom: 10px;
   margin-top: 20px;
   text-align: center;
-  .gravatar {
+  gravatar {
     float: none;
     max-width: 70px;
   }
@@ -60,7 +52,7 @@ section.user_info {
   }
 }
 
-.gravatar {
+gravatar {
   float: left;
   max-width: 50px;
   border-radius: 50%;

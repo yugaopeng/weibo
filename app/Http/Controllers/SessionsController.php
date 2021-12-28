@@ -2,22 +2,25 @@
 
 namespace App\Http\Controllers;
 
-<<<<<<< HEAD
-=======
 
 use Auth;
 
->>>>>>> login-logout
 use Illuminate\Http\Request;
 
 class SessionsController extends Controller
 {
+
+    public function destroy()
+    {
+        Auth::logout();
+        session()->flash('success', '您已成功退出！');
+        return redirect('login');
+    }
+
     public function create()
     {
         return view('sessions.create');
     }
-<<<<<<< HEAD
-=======
 
     public function store(Request $request)
     {
@@ -35,5 +38,4 @@ class SessionsController extends Controller
         }
 
     }
->>>>>>> login-logout
 }

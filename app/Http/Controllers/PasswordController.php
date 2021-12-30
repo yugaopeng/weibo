@@ -13,6 +13,14 @@ use Carbon\Carbon;
 class PasswordController extends Controller
 {
 
+    public function __construct()
+    {
+        $this->middleware('throttle:3,10', [
+            'only' => ['showLinkRequestForm']
+        ]);
+    }
+
+
     public function showResetForm(Request $request)
     {
         $token = $request->route()->parameter('token');

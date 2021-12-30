@@ -18,7 +18,14 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $fillable = [
+
+
+    public function statuses()
+    {
+        return $this->hasMany(Status::class);
+    }
+
+     protected $fillable = [
         'name',
         'email',
         'password',
